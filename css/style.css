@@ -79,7 +79,7 @@ grid-template-rows: repeat(16, 40px);
 
 }
 .grid-elem {
-    border: 1px rgb(173, 173, 173) solid;
+    border: 1px rgb(185, 185, 185) solid;
 }
 .grid-elem:hover{
     background-color: black;
