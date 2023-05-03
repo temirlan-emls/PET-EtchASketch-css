@@ -71,10 +71,10 @@ cellNumber.addEventListener('submit', function (e) {
     let formdata = new FormData(this);
     let cells = formdata.get('my-input');
 
-    if (64 <= cells && cells <= 128) {
+    if (24 <= cells && cells <= 128) {
         gridGen(cells);
     } else {
-        alert('ERROR! Please enter number between 64 - 128');
+        alert('ERROR! Please enter number between 24 - 128');
     }
 });
 
