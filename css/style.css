@@ -3,7 +3,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Racing Sans One', cursive;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /**/
 .name-wrapper {
     width: 100%;
@@ -11,121 +18,120 @@
 
     display: flex;
     justify-content: center;
-
 }
 .name {
-    font-family: 'Racing Sans One', cursive;
     font-size: 25px;
     text-transform: uppercase;
-    padding: 2vh ;
+    padding: 2vh;
+}
+/**/
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
 }
 /**/
 .form-wrapper {
     display: flex;
-    justify-content: center;
+    width: 640px;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
 }
+.my-form input {
+    height: 20px;
+}
+.my-form button {
+    height: 30px;
+    width: 40px;
+    text-transform: uppercase;
+    background-color: yellow;
+}
+.my-form button:hover {
+    background-color: rgb(186, 186, 4);
+}
+.my-color {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/**/
 .paint-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.my-form input {
-   margin: 10px auto 0 auto;
-   height: 20px;
+.paint-main {
+    width: 640px;
+    border: 5px red solid;
+    display: grid;
+    grid-template-columns: repeat(64, 10px);
+    grid-template-rows: repeat(64, 10px);
 }
-.my-form button {
+.grid-elem:hover {
+    background-color: black;
+}
+.grid-elem {
+    user-select: none;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.buttonsWrapper {
+    width: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset {
     height: 40px;
     width: 70px;
-    font-family: 'Racing Sans One', cursive;
     font-size: 20px;
-    text-transform: uppercase;
-    margin: 10px auto 25px auto;
-    background-color: yellow;
-
- }
-
- .reset {
-    height: 40px;
-    width: 70px;
-    font-family: 'Racing Sans One', cursive;
-    font-size: 20px;
-    color: aliceblue    ;
+    color: aliceblue;
     text-transform: uppercase;
     margin: 10px auto 25px auto;
     background-color: rgb(0, 177, 147);
-
 }
-
-/**/
-.paint-wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.reset:hover {
+    background-color: rgb(1, 143, 120);
 }
-.paint {
-    display: flex;
-    justify-content: center;
-    width: 640px;
-    height: 100%;
-    border: 5px red solid;
+.back {
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px auto 25px auto;
+    background-color: rgb(188, 255, 81);
 }
-.paint-main {
-    
-display: grid;
-
-grid-template-columns: repeat(16, 40px);
-grid-template-rows: repeat(16, 40px);
-
+.back:hover {
+    background-color: rgb(155, 210, 67);
 }
-.grid-elem {
-    border: 1px rgb(185, 185, 185) solid;
+.forward {
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px auto 25px auto;
+    background-color: rgb(188, 255, 81);
 }
-.grid-elem:hover{
-    background-color: black;
+.forward:hover {
+    background-color: rgb(155, 210, 67);
 }
-
-/**/
-
-.colorpic-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 170px;
+.recentColor {
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px auto 25px auto;
 }
-
-.colorpick {
-    width: 50%;
-    
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.colorpick button {
-    width: 100px;
-    height: 100px;
-    
-    border: 1px solid grey;
-    border-radius: 50px;
-}
-
-.red {
-    background-color: rgba(255, 0, 0, 0.5);
-}
-.yellow {
-    background-color: rgb(255, 255, 4, 0.5);
-}
-.blue {
-    background-color: rgb(0, 0, 255, 0.5);
-}
-.green {
-    background-color: rgb(0, 255, 0, 0.5);
-}
-
-/**/
-
-.black {
-    background-color: rgb(255, 0, 0);
+.recentColor:hover {
+    opacity: 0.5;
 }
